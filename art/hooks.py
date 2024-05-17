@@ -6,6 +6,19 @@ app_email = "arun@frappify.com"
 app_license = "mit"
 # required_apps = []
 
+fixtures = [
+    {
+        "doctype": "Role",
+        "filters": [["name", "=", "ART Artist"]]
+    },
+    {
+        "doctype": "Custom DocPerm",
+        "filters": {
+            "role": ["in","ART Artist"]
+        }
+    },
+]
+
 # Includes in <head>
 # ------------------
 
